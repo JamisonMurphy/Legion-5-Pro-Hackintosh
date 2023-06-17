@@ -1,11 +1,7 @@
-# macOS on Lenovo Legion 5 6th Gen
-
-![Desktop](/Images/Desktop_Monterey.png)
-![Desktop](/Images/Desktop_Ventura.png)
+# macOS on Lenovo Legion 5 pro (aka r9000p 2021H)
 
 ## Table of Contents
 
-- [Screenshots](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#screenshots)
 - [Specifications](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#specifications)
 - [macOS Compatibility](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#macos-update-history)
 - [What's working](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#whats-working)
@@ -16,18 +12,15 @@
 - [SSDTs used](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#SSDTs-used)
 - [Credits](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#credits)
 
-## Screenshots
-
-Coming soon.
 
 ## Specifications
 
 Type | Spec | Status
 :---------|:---------|:----------
-Model Name      | Lenovo Legion 5 6th Gen | ✅
+Model Name      | Lenovo Legion 5 pro | ✅
 CPU              | AMD Ryzen™ 7 5800H CPU | ✅
-Dedicated GPU | AMD Radeon™ RX 6600M | ✅
-RAM           | 16 GB 3200 MHz DDR4 | ✅
+iGPU | Vega 8 | ✅
+RAM           | 32 GB 3200 MHz DDR4 | ✅
 Wi-Fi             | Intel® Wi-Fi 6E AX210 | ✅
 Ethernet          | Realtek RTL8111 | ✅
 Audio       | Realtek ALC287 | ✅
@@ -42,7 +35,7 @@ Audio       | Realtek ALC287 | ✅
 Type | Status
 :---------|:----------
 CPU | ✅
-AMD GPU Acceleration | ✅
+AMD iGPU Acceleration | ✅
 CPU & GPU Power Management | ✅
 Audio | ✅
 Ethernet | ✅
@@ -56,7 +49,6 @@ Type | Info | Status
 :---------|:---------|:----------
 USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. | ⚠️
 Bluetooth | Same as USB | ⚠️
-Brightness | Doesn't even work properly in Linux, this is because this laptop uses DC Dimmer instead of PWM, [Lunar](https://github.com/alin23/Lunar) app can be used as workaround. | ⚠️
 Sleep | PowerPlay panic on wake, still investigating | ⚠️
 
 ## Instructions
@@ -96,11 +88,6 @@ After you're at the macOS desktop, running [@mikigal's script](https://github.co
 source <(curl -s https://raw.githubusercontent.com/mikigal/ryzen-hackintosh/master/Resources/ryzen_patch.sh)
 ```
 
-## Notes
-
-> **Info**
-
-At the moment, using the **MacBookPro16,4** SMBIOS will result in HEVC encoding not working (H264 decoding/encoding + HEVC decoding will still work). If you absolutely require this functionality, you should switch to the MacPro7,1 SMBIOS. Note that this will result in a degraded quality of laptop-specific features.
 
 ## Kexts used
 
@@ -124,7 +111,7 @@ Kext | Info
 [UTBMap](https://github.com/USBToolBox/tool) | USB Map
 [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel
 [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | PS/2 Keyboard support
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen) | GPU patches
+[NootedRed](https://github.com/NootInc/NootedRed) | iGPU patches
   
 ## SSDTs Used
   
