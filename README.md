@@ -1,3 +1,4 @@
+Backup of Legion 5 EFI from https://github.com/ExtremeXT/
 # macOS on Lenovo Legion 5 6th Gen
 
 ![Desktop](/Images/Desktop_Monterey.png)
