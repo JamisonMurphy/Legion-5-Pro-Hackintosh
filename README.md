@@ -29,7 +29,8 @@ Audio       | Realtek ALC287 | ✅
 
 - ✅ macOS Monterey 12.6.1
 - ✅ macOS Ventura 13.3.1
-
+- ✅ macOS 14.0b1
+  
 ## What's working
 
 Type | Status
@@ -40,6 +41,7 @@ CPU & GPU Power Management | ✅
 Audio | ✅
 Ethernet | ✅
 Intel Wi-Fi | ✅
+Bluetooth | ✅
 Battery Status | ✅
 Shutdown / Reboot |✅
 
@@ -48,7 +50,6 @@ Shutdown / Reboot |✅
 Type | Info | Status
 :---------|:---------|:----------
 USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. | ⚠️
-Bluetooth | Same as USB | ⚠️
 Sleep | PowerPlay panic on wake, still investigating | ⚠️
 
 ## Instructions
