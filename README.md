@@ -131,3 +131,4 @@ SSDT | Info
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and most Kexts.
 - [yusufklncc](https://github.com/yusufklncc) for README template.
 - And anyone else that helped to develop and improve hackintoshing.
+- Legion 5 EFI from https://github.com/ExtremeXT/
