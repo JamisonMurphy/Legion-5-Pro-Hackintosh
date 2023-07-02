@@ -51,6 +51,7 @@ Type | Info | Status
 :---------|:---------|:----------
 USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. | ⚠️
 Sleep | PowerPlay panic on wake, still investigating | ⚠️
+TouchPad | ToDo | ⚠️
 
 ## Instructions
 
