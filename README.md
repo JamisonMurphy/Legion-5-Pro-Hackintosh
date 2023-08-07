@@ -21,7 +21,7 @@ Model Name      | Lenovo Legion 5 pro | ✅
 CPU              | AMD Ryzen™ 7 5800H CPU | ✅
 iGPU | Vega 8 | ✅
 RAM           | 32 GB 3200 MHz DDR4 | ✅
-Wi-Fi             | Intel® Wi-Fi 6E AX210 | ✅
+Wi-Fi             | Intel® Wi-Fi 6 AX200 | ✅
 Ethernet          | Realtek RTL8111 | ✅
 Audio       | Realtek ALC287 | ✅
 
@@ -42,6 +42,7 @@ Audio | ✅
 Ethernet | ✅
 Intel Wi-Fi | ✅
 Bluetooth | ✅
+USB | ✅
 Battery Status | ✅
 Shutdown / Reboot |✅
 
@@ -49,7 +50,7 @@ Shutdown / Reboot |✅
 
 Type | Info | Status
 :---------|:---------|:----------
-USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. | ⚠️
+USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. (fixed after add GenericUSBXHCI ,only need to disbale 1 XHC port during install)| ⚠️
 Sleep | PowerPlay panic on wake, still investigating | ⚠️
 TouchPad | ToDo | ⚠️
 
@@ -114,6 +115,8 @@ Kext | Info
 [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel
 [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | PS/2 Keyboard support
 [NootedRed](https://github.com/NootInc/NootedRed) | iGPU patches
+[GenericUSBXHCI](https://github.com/RattletraPM/GUX-RyzenXHCIFix) | Ryzen USB patches
+
   
 ## SSDTs Used
   
