@@ -79,7 +79,7 @@ Download [Universal AMD Form Browser](https://github.com/DavidS95/Smokeless_UMAF
 #### Changing your SMBIOS data
 
 Download and run [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-Type 2 and select your **config.plist**, then type 3 and type **MacBookPro16,4**
+Type 2 and select your **config.plist**, then type 3 and type **MacBookPro16,3**
 
 #### Changing your CPU name
 
